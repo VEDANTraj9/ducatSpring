@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean name="add" class="com.ducat.Spring.model.Address">
+		<property name="city" value="Noida" />
+		<property name="state" value="UP" />
+	</bean>
+
+	<bean name="e1" class="com.ducat.Spring.model.Employee">
+		<property name="name" value="Ansh" />
+		<property name="gender" value="Male" />
+		<property name="id" value="101" />
+		<property name="address" ref="add" />
+
+
+	</bean>
+
+
+</beans>
