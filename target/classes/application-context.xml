@@ -9,11 +9,10 @@
 		<property name="state" value="UP" />
 	</bean>
 
-	<bean name="e1" class="com.ducat.Spring.model.Employee">
-		<property name="name" value="Ansh" />
-		<property name="gender" value="Male" />
-		<property name="id" value="101" />
-		<property name="address" ref="add" />
+	<bean name="e1" class="com.ducat.Spring.model.Employee" autowire= "constructor">
+		<constructor-arg name="name" value="Ansh" />
+		<constructor-arg name="gender" value="Male" />
+		<constructor-arg name="id" value="101" />
 
 
 	</bean>
