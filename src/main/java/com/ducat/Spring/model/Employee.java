@@ -2,7 +2,7 @@ package com.ducat.Spring.model;
 
 public class Employee {
 
-//	Instance var / attributes / Properties 
+
 	private String name, gender;
 	private int id;
 	

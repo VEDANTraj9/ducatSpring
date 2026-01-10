@@ -5,11 +5,12 @@
 
 	<!-- bean definitions here -->
 	<bean name="add" class="com.ducat.Spring.model.Address">
-		<property name="city" value="Noida" />
-		<property name="state" value="UP" />
+		<property name="city" value="Rajgir" />
+		<property name="state" value="Bihar" />
 	</bean>
 
-	<bean name="e1" class="com.ducat.Spring.model.Employee" autowire= "constructor">
+	<bean name="e1" class="com.ducat.Spring.model.Employee"
+		autowire="constructor">
 		<constructor-arg name="name" value="Ansh" />
 		<constructor-arg name="gender" value="Male" />
 		<constructor-arg name="id" value="101" />
